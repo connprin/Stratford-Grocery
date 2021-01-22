@@ -95,5 +95,8 @@
   <ItemGroup>
     <None Include="Resources\icons8-grocery-shelf-96.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favicon.ico" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

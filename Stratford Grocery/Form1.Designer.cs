@@ -29,6 +29,7 @@ namespace Stratford_Grocery
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(stratfordGrocery));
             this.categoryBackground = new System.Windows.Forms.Label();
             this.meatButton = new System.Windows.Forms.Button();
             this.produceButton = new System.Windows.Forms.Button();
@@ -792,6 +793,7 @@ namespace Stratford_Grocery
             this.Controls.Add(this.pastordersLabel);
             this.Controls.Add(this.pastordersHeader);
             this.Controls.Add(this.backButton2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "stratfordGrocery";
             this.Text = "Stratford Grocery";
             this.ResumeLayout(false);

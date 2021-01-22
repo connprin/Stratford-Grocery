@@ -1,4 +1,7 @@
 ﻿using System;
+//January 22, 2021
+//created by Connor Prince
+//this program is a cash register for a grocery store, it simulates features similiar to real cash registers
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -633,6 +636,7 @@ namespace Stratford_Grocery
 
         public void calculateButton_Click(object sender, EventArgs e)
         {
+            //calculates subtotal, tax, and total
             double butterTotal = butterPrice * butterAmount;
             double eggsTotal = eggsPrice * eggsAmount;
                         double milkTotal = milkPrice  * milkAmount;
@@ -664,6 +668,7 @@ namespace Stratford_Grocery
 
         private void clearButton_Click(object sender, EventArgs e)
         {
+            //clears all values except stored ones
             displayLabel.Text = "";
             chickenAmount = 0;
             steakAmount = 0;
@@ -692,6 +697,7 @@ namespace Stratford_Grocery
         }
         private void printButton_Click(object sender, EventArgs e)
         {
+            //prints receipt
             double butterTotal = butterPrice * butterAmount;
             double eggsTotal = eggsPrice * eggsAmount;
             double milkTotal = milkPrice * milkAmount;
@@ -877,6 +883,7 @@ namespace Stratford_Grocery
 
         private void backButton_Click(object sender, EventArgs e)
         {
+            //takes user to main screen
             categoryBackground.Visible = true;
             meatButton.Visible = true;
             produceButton.Visible = true;
@@ -941,6 +948,7 @@ namespace Stratford_Grocery
 
         private void voidButton_Click(object sender, EventArgs e)
         {
+            //allows user to discard items
             if (voidButton.BackColor == Color.Gray)
             {
                 voidButton.BackColor = Color.Red;
@@ -954,6 +962,7 @@ namespace Stratford_Grocery
 
         private void discountButton_Click(object sender, EventArgs e)
         {
+            //takes user to discount screen
             categoryBackground.Visible = false;
             meatButton.Visible = false;
             produceButton.Visible = false;
@@ -1018,6 +1027,7 @@ namespace Stratford_Grocery
 
         private void pastordersButton_Click(object sender, EventArgs e)
         {
+            //takes user to past orders screen
             categoryBackground.Visible = false;
             meatButton.Visible = false;
             produceButton.Visible = false;
@@ -1107,6 +1117,7 @@ namespace Stratford_Grocery
 
         private void backButton2_Click(object sender, EventArgs e)
         {
+            //takes user to main menu
             categoryBackground.Visible = true;
             meatButton.Visible = true;
             produceButton.Visible = true;
@@ -1170,6 +1181,7 @@ namespace Stratford_Grocery
 
         private void backButton3_Click(object sender, EventArgs e)
         {
+            //takes user to main menu
             categoryBackground.Visible = true;
             meatButton.Visible = true;
             produceButton.Visible = true;
@@ -1237,6 +1249,7 @@ namespace Stratford_Grocery
 
         private void thirtypercentButton_Click(object sender, EventArgs e)
         {
+            //thirty percent off discount
             double butterTotal = butterPrice * butterAmount;
             double eggsTotal = eggsPrice * eggsAmount;
             double milkTotal = milkPrice * milkAmount;
@@ -1273,6 +1286,7 @@ namespace Stratford_Grocery
 
         private void twodozeneggsButton_Click(object sender, EventArgs e)
         {
+            //2 dozen eggs for free discount button
             double butterTotal = butterPrice * butterAmount;
             double eggsTotal = eggsPrice * eggsAmount;
             double milkTotal = milkPrice * milkAmount;
@@ -1311,6 +1325,7 @@ namespace Stratford_Grocery
 
         private void twoforoneButton_Click(object sender, EventArgs e)
         {
+            //2 for 1 soda discount button
             double butterTotal = butterPrice * butterAmount;
             double eggsTotal = eggsPrice * eggsAmount;
             double milkTotal = milkPrice * milkAmount;
